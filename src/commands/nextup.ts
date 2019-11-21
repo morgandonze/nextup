@@ -23,7 +23,7 @@ const command: GluegunCommand = {
       props: { name: appName }
     })
 
-    system.run(
+    await system.run(
       `cd ${appName} && yarn init -y && yarn add react react-dom react-native-web next typescript @types/react @types/node react-native-web`
     )
     print.info('Done! `yarn run dev` to start')
