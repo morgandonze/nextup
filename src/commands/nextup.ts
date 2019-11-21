@@ -24,9 +24,9 @@ const command: GluegunCommand = {
     })
 
     system.run(
-      `cd ${appName} && yarn init -y && yarn add react react-dom next && yarn add --dev typescript @types/react @types/node`
+      `cd ${appName} && yarn init -y && yarn add react react-dom react-native-web next && yarn add --dev typescript @types/react @types/node react-native-web`
     )
-    print.info('Done!')
+    print.info('Done! `yarn run dev` to start')
   }
 }
 
