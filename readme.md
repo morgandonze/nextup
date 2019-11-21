@@ -2,6 +2,9 @@
 
 Next.js starter
 
-## Usage
+## Installation & Usage
+`npm i nextup-js`
+or
+`yarn add nextup-js`
 
 `nextup myApp`
