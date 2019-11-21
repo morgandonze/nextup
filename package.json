@@ -1,8 +1,7 @@
 {
-  "name": "nextup",
+  "name": "nextup-js",
   "version": "0.0.1",
   "description": "nextup CLI",
-  "private": true,
   "types": "build/types/types.d.ts",
   "bin": {
     "nextup": "bin/nextup"
