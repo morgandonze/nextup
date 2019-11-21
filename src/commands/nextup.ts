@@ -14,8 +14,8 @@ const command: GluegunCommand = {
     filesystem.dir(pagesDir)
 
     await template.generate({
-      template: 'index.ts',
-      target: `${pagesDir}/index.ts`
+      template: 'index.tsx',
+      target: `${pagesDir}/index.tsx`
     })
     await template.generate({
       template: 'package.json.ejs',
@@ -24,7 +24,7 @@ const command: GluegunCommand = {
     })
 
     system.run(
-      `cd ${appName} && yarn init -y && yarn add react react-dom react-native-web next && yarn add --dev typescript @types/react @types/node react-native-web`
+      `cd ${appName} && yarn init -y && yarn add react react-dom react-native-web next typescript @types/react @types/node react-native-web`
     )
     print.info('Done! `yarn run dev` to start')
   }
