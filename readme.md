@@ -14,4 +14,4 @@ or
 I'm not a designer. Does this look good? (Colors are customizable)
 
 
-![alt text](http://screenshot.png)
+![Ugly Screenshot](https://github.com/mlaco/nextup/blob/master/screenshot.png)
