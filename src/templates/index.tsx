@@ -3,6 +3,10 @@ import { Text, View, ViewStyle } from 'react-native-web'
 import { useMediaPredicate } from 'react-media-hook'
 import Head from 'next/head'
 
+const ROOT = {
+  backgroundColor: 'rgb(47, 52, 55)'
+}
+
 const CENTERED = {
   marginHorizontal: 'auto',
   width: '60%'
@@ -19,7 +23,7 @@ const CONTAINER = (size: number): ViewStyle => ({
 })
 
 const HEADER_CONTAINER = (size: number): ViewStyle => ({
-  backgroundColor: '#ffd34d',
+  backgroundColor: '#bada55',
   paddingHorizontal: 18,
   paddingVertical: 20
 })
@@ -126,6 +130,10 @@ const head = () => (
         height: 100%;
       }
 
+      * {
+        color: rgb(230, 230, 230);
+      }
+
       body {
         font-family: 'Lato';
         color: #efefef;
@@ -182,19 +190,21 @@ export default function Index() {
   const size = smallSize + mediumSize + largeSize + extraLargeSize
 
   return (
-    <View style={CONTAINER(size)}>
-      {head()}
-      <View style={HEADER_CONTAINER(size)}>
-        <View style={HEADER_TOP(size)}>
-          <Text style={{ fontSize: (1 + size) * 10 + 20 }}>Title</Text>
-          {size <= 1 && bunMenu()}
+    <View style={ROOT}>
+      <View style={CONTAINER(size)}>
+        {head()}
+        <View style={HEADER_CONTAINER(size)}>
+          <View style={HEADER_TOP(size)}>
+            <Text style={{ fontSize: (1 + size) * 10 + 20 }}>Title</Text>
+            {size <= 1 && bunMenu()}
+          </View>
+
+          {size > 1 && rowMenu()}
         </View>
 
-        {size > 1 && rowMenu()}
-      </View>
-
-      <View style={BODY(size)}>
-        <Text style={{ fontSize: (1 + size) * 2 + 14 }}>{lorem()}</Text>
+        <View style={BODY(size)}>
+          <Text style={{ fontSize: (1 + size) * 2 + 14 }}>{lorem()}</Text>
+        </View>
       </View>
 
       {false && modal()}
