@@ -24,5 +24,12 @@
     "declarationDir": "build/types"
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "src/templates/*.tsx"]
+  "exclude": [
+    "node_modules",
+    "src/templates/index.tsx",
+    "src/templates/components/Header.tsx",
+    "src/templates/components/Layout.tsx",
+    "src/templates/components/Modal.tsx",
+    "src/templates/components/palette.ts"
+  ]
 }
