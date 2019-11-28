@@ -22,5 +22,7 @@ or
 
 ## What's it look like?
 
+I might add configuration later. (PRs welcome!)
+
 ![desktop screenshot of template design](https://github.com/mlaco/nextup/blob/master/screen-desktop.png)
 ![mobile screenshot of template design](https://github.com/mlaco/nextup/blob/master/screen-mobile.png)
