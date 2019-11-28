@@ -2,6 +2,12 @@
 
 Next.js starter
 
+## Features
+- Responsive with 4 common breakpoints
+- Easy to use!
+- ???
+- Gerbils!!!?
+
 ## Installation & Usage
 
 `npx nextup-js myApp`
@@ -16,6 +22,5 @@ or
 
 ## What's it look like?
 
-I'm not a designer. Does this look good? (Colors are customizable)
-
-![Ugly Screenshot](https://github.com/mlaco/nextup/blob/master/screenshot.png)
+![desktop screenshot of template design](https://github.com/mlaco/nextup/blob/master/screen-desktop.png)
+![mobile screenshot of template design](https://github.com/mlaco/nextup/blob/master/screen-mobile.png)
