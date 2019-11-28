@@ -10,8 +10,14 @@ const command: GluegunCommand = {
     const appName = parameters.first
     const appDir = `${process.cwd()}/${appName}`
     const pagesDir = `${appDir}/pages`
+    const componentsDir = `${appDir}/components`
     filesystem.dir(`${appDir}`)
     filesystem.dir(pagesDir)
+    // filesystem.dir(componentsDir)
+    const components = `${__dirname}/../templates/components`
+    filesystem.copy(components, componentsDir, {
+      matching: ['*.ts', '*.tsx']
+    })
 
     await template.generate({
       template: 'index.tsx',
